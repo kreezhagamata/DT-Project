@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What You Can Do | Green Choice</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#adcb82;
+color:#333;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#2e7d32;
+padding:10px 20px;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.nav-links a:hover{
+color:#c8e6c9;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:40px;
+text-align:center;
+}
+
+.action-box{
+background:rgb(195, 255, 203);
+padding:20px;
+margin:20px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.challenge-box{
+background: #ccf55b;
+padding:20px;
+margin:20px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  background:#1b5e20;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<h2 style="color:white;">Green Choice</h2>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="whatyoucando.html">What You Can Do</a></li>
+<li><a href="tips.html">Tips</a></li>
+<li><a href="funfacts.html">Fun Facts</a></li>
+</ul>
+
+</nav>
+
+<div class="container">
+
+<h1>What You Can Do To Help the Planet</h1>
+
+<div class="action-box">
+<h3>At Home</h3>
+<p> - Unplug chargers and devices.
+    <br> - Reduce, reuse, recycle.
+    <br> - Turn off the lights and appliances when not in use.
+</p>
+</div>
+
+<img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png"
+  width="60">
+
+<div class="action-box">
+<h3>At School</h3>
+<p> - Do not litter at school
+<br> - Pick up rubbish if you see one
+ <br> - Use reusable lunch boxes and water bottles.
+</p>
+</div>
+
+<img src="https://cdn-icons-png.flaticon.com/512/167/167707.png" width="60">
+
+<div class="action-box">
+<h3>In Your Community</h3>
+<p>- Join clean-up events <br> - Plant trees or plants <br> - Spread awareness</p>
+</div>
+
+<img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" width="60" >
+
+
+<div class="challenge-box">
+
+<button onclick="toggleChallenge()" style="padding:10px; font-weight:bold;">
+  1 Day Green Challenge (Click to Open)
+</button>
+
+<div id="challengeContent" style="display:none; margin-top:10px;">
+  <p>
+  - Save as much water as you can<br>
+  - Walk or bike instead of using a car<br>
+  - Avoid single-use plastic for the day
+  </p>
+</div>
+
+</div>
+
+</div>
+
+<script>
+function toggleChallenge() {
+  var content = document.getElementById("challengeContent");
+
+  if (content.style.display === "none") {
+    content.style.display = "block";
+  } else {
+    content.style.display = "none";
+  }
+}
+</script>
+
+<footer>
+
+<p><strong>Green Choice</strong></p>
+
+</footer>
+
+</body>
+</html>

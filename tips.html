@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Eco Tips | Green Choice</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#adcb82;
+}
+
+.navbar{
+background:#2e7d32;
+padding:10px 20px;
+display:flex;
+justify-content:space-between;
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.container{
+padding:40px;
+max-width:900px;
+margin:auto;
+text-align: center;
+}
+
+.tip{
+background:white;
+padding:20px;
+margin:20px;
+border-radius:8px;
+transition: 0.3s;
+}
+
+.tip:hover {
+    transform:translateY(-5px);
+}
+
+footer {
+  background:#1b5e20;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<h2 style="color:white;">Green Choice</h2>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="whatyoucando.html">What You Can Do</a></li>
+<li><a href="tips.html">Tips</a></li>
+<li><a href="funfacts.html">Fun Facts</a></li>
+</ul>
+
+</nav>
+
+<div class="container">
+
+<h1>Eco Friendly Tips</h1>
+
+<div class="tip">
+<h3>Reduce Waste 🌍</h3>
+<p>Use reusable bags, bottles, and containers! e.g having your own water bottle, and lunchbox</p>
+</div>
+
+
+<div class="tip">
+<h3>Save Water 💧</h3>
+<p>It's important to save water so it's better to take shorter showers and turning off the tap when you're brushing your teeth</p>
+</div>
+
+<div class="tip">
+<h3>Save Energy ⚡</h3>
+<p>Turn off the switch when not in use and use natural light when possible</p>
+</div>
+
+<button onclick="showTip()"> Click for Eco Tip 
+</button>
+
+<h3>Learn More</h3>
+<a href="https://environment.govt.nz/what-you-can-do/take-action/" target="_blank">
+    NZ Government Action Page
+</a>
+
+1
+<footer>
+
+<p>Green Choice</p>
+
+</footer>
+
+
+<script>
+function showTip(){
+  const tips = [
+    "Bring a reusable bottle",
+    "Walk instead of driving",
+    "Turn off unused lights"
+  ];
+  document.getElementById("tipText").innerHTML =
+    tips[Math.floor(Math.random() * tips.length)];
+}
+
+</script>
+
+</body>
+</html>
